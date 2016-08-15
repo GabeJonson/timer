@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+#timer {
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.start, .pause, .stop {
+    width: 200px;
+    height: 200px;
+    padding: 20px 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: aliceblue;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start:active, .pause:active, .stop:active,
+.start:focus, .pause:focus, .stop:focus {
+    outline: none;
+}
+
+.start {
+    background-color: lightseagreen;
+}
+
+.start:hover, .pause:hover, .stop:hover {
+    color: #333;
+}
+
+.pause {
+    background-color: greenyellow;
+}
+
+.stop {
+    background-color: indianred;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
